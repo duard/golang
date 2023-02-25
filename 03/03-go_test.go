@@ -1,4 +1,4 @@
-package interaction
+package interation
 
 import "testing"
 
