@@ -1,0 +1,104 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabCompletion": "on",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, 'VictorMono Nerd Font'",
+  "editor.fontLigatures": "'zero', 'ss02', 'ss03', 'ss04', 'ss05', 'calt'",
+  "editor.fontSize": 13,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontWeight": "200",
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.fontWeightBold": "700",
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.fontWeight": "400",
+  "typescript.format.enable": true,
+  "editor.multiCursorModifier": "alt",
+  "editor.formatOnPaste": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.wordWrapColumn": 1000,
+  "editor.wordWrap": "wordWrapColumn",
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontSize": 10,
+  "files.insertFinalNewline": true,
+  "editor.renderLineHighlight": "all",
+  "workbench.editor.showIcons": true,
+  "editor.selectionHighlight": true,
+  "explorer.autoReveal": true,
+  "files.trimTrailingWhitespace": true,
+  "php.suggest.basic": false,
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": true,
+  "editor.wrappingIndent": "indent",
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "editor.snippetSuggestions": "top",
+  "files.autoSave": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.openFilesInNewWindow": "on",
+  "editor.lineHeight": 20,
+  "javascript.validate.enable": false,
+  "workbench.editor.enablePreview": false,
+  "editor.letterSpacing": 0.5,
+  "editor.cursorWidth": 3,
+  "editor.glyphMargin": true,
+  "jest.autoRun": "off",
+
+  "editor.suggestSelection": "first",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "json.maxItemsComputed": 999999999999,
+  "editor.foldingMaximumRegions": 65000,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "git.mergeEditor": false,
+  "window.zoomLevel": 3,
+  "workbench.colorTheme": "Dracula Refined",
+  "files.exclude": {
+    "**/.trunk/*out": true
+  },
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.go$",
+        "cmd": "golines ${file} -w"
+      }
+    ]
+  },
+  "go.lintOnSave": "file",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 8,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.docsTool": "gogetdoc",
+  "files.watcherExclude": {
+    "**/.trunk/*out": true
+  }
+}
