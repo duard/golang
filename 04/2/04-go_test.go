@@ -1,8 +1,14 @@
 package main
 
 import (
+	"os"
 	"testing"
 )
+
+func TestMain(m *testing.M) {
+	exitVal := m.Run()
+	os.Exit(exitVal)
+}
 
 func TestAdd(t *testing.T) {
 	t.Run("fixed 5 numbers", func(t *testing.T) {
