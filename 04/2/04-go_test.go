@@ -1,15 +1,30 @@
 package main
 
 import (
+	"log"
 	"os"
 	"testing"
 )
 
+//	func TestMain(m *testing.M) {
+//		log.Println("Do stuff BEFORE the tests!")
+//		exitVal := m.Run()
+//		log.Println("Do stuff AFTER the tests!")
+//		os.Exit(exitVal)
+//	}
+
 func TestMain(m *testing.M) {
-	exitVal := m.Run()
-	os.Exit(exitVal)
+	exitcode := m.Run()
+	os.Exit(exitcode)
 }
 
+func TestRunMain(t *testing.T) {
+	main()
+}
+
+func TestB(t *testing.T) {
+	log.Println("TestB running")
+}
 func TestAdd(t *testing.T) {
 	t.Run("fixed 5 numbers", func(t *testing.T) {
 		numbers := []int{1, 2, 3}
