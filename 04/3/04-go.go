@@ -9,10 +9,9 @@ func main() {
 func SumAll(numbersToSum ...[]int) []int {
 	lengthOfNumbers := len(numbersToSum)
 	sums := make([]int, lengthOfNumbers)
-	// fmt.Printf("numbersToSum %d , %d , %d \n", numbersToSum, lengthOfNumbers, sums)
 
-	for i, numbers := range numbersToSum {
-		sums[i] = Sum(numbers)
+	for _, numbers := range numbersToSum {
+		sums = append(sums, Sum(numbers))
 	}
 
 	return sums
