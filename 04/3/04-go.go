@@ -1,22 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	//  numbersToSum := []int{2,3}, []int{4,5}
-	fmt.Println("==========")
-	fmt.Println(SumAll([]int{1, 2}, []int{0, 9}))
+	SumAll([]int{1, 2}, []int{0, 9})
+	os.Exit(0)
 }
 
 func SumAll(numbersToSum ...[]int) []int {
 	lengthOfNumbers := len(numbersToSum)
 	sums := make([]int, lengthOfNumbers)
 
-	fmt.Printf("numbersToSum %d , %d , %d \n", numbersToSum, lengthOfNumbers, sums)
-
 	for i, numbers := range numbersToSum {
 		sums[i] = Sum(numbers)
 	}
+
+	fmt.Printf("numbersToSum %d , %d , %d \n", numbersToSum, lengthOfNumbers, sums)
 
 	return sums
 }
